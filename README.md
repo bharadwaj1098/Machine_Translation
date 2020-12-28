@@ -1,15 +1,15 @@
 # Machine_Translation
 Translation of Japanese to English language. 
 
-##Project Topic: Neural Machine Translation
+## Project Topic: Neural Machine Translation
 
-##A. Project Team members
+## A. Project Team members
 
 1. Sai Bharadwaj Reddy Arrabelly - 801166672
 2. Monesa Thoguluva Janardhanan - 801167556
 3. Prashanth Minkuri - 801166901
 
-##B. Project Topic Introduction
+## B. Project Topic Introduction
 We are planning to implement a Neural Machine Translation using the Transformer Model for
 translation of Japanese sentences to English. As of January 2020, Transformers are the dominant
 architecture in NLP and are used to achieve state-of-the-art results for many tasks and it appears
