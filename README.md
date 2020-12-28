@@ -58,4 +58,39 @@ predict the BLEU score. This gave us a BLEU score of 41.49 and the Perplexity sc
 ![PERPLEXITY](images/Perplexity.png)
 
 
+Above graphs suggested how loss and perplexity are getting changed during the training of the transformer model.
+
+## Summary
+
+The main aim of our project is to build a Neural Machine Translation model by using a
+Transformer model to translate Japanese sentences to English sentences.
+We have followed the same approach followed in the following paper
+"Attention is all you need"
+https://papers.nips.cc/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf
+This paper has built a transformer model for English to German and English to French and has
+acquired about 28.4 and 41.0 BLEU score respectively.
+We have built the same Transformer model by following the paper for Japanese to English and
+have succeeded in achieving the state of the art BLEU score.
+First we implemented a Seq2seq which uses Encoder - Decoder. Both Encoder and Decoder use
+RNN. Encoder encodes the input sentence into a single vector, Decoder takes in that vector and
+outputs the sentence.
+The dataset that we have used for the Seq2Seq model was taken from the following link.
+https://www.kaggle.com/team-ai/japaneseenglish-bilingual-corpus/
+This dataset mainly deals about traditional Japanese culture, religion, and history. As we went
+through the dataset it didn't have any daily life conversation or normal words that Japanese
+people use frequently. It was all about government offices, festivals etc. When we built our
+baseline model and ran this dataset we achieved a very low BLEU score of 4.86. This made us
+look into more datasets and we felt if we have huge data for training the model will predict well.
+So we found another dataset from the following link
+https://www.manythings.org/anki/
+The next step was implementing the transformer model. We merged both the datasets into 1
+and we trained the model with 68674 records. For the Transformer model we have implemented
+the encoders and the decoders exactly as mentioned in the “Attention is all you need” paper.
+We have achieved a BLEU score of 41.49 with our model. Some observations we have seen in our
+results are
+Our model translates sentences correctly only where a proper subject or a proper end of
+sentence (.) is present.
+Our model is fairly okay when it needs to translate sentences about Japanese culture, religion,
+and history. We believe that a huge dataset is needed for training in order to translate it correctly.
+Our model translates pretty decently when it comes to daily life conversations in Japanese.
 
