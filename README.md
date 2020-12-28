@@ -32,4 +32,6 @@ For encoder as the paper suggests first the tokens are passed to an Input embedd
 quality assessment of our translation. It measures direct word-to-word similarity that provides first hand analysis of the quality of our translation. BLEU has frequently been reported as correlating well with human judgement. Another metric we are using our project is Perplexity. 
 In natural language processing, perplexity is a way of evaluating language models. A language model is a probability distribution over entire sentences or texts.
 
+## Results
+
 
