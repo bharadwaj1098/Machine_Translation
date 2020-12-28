@@ -26,10 +26,25 @@ of 41.0.
 # Approaches
 
 We used Spacy for Tokenizing the Data. Our Implementation is being Done is Pytorch due to which TorchText Fields were also used in preprocessing. Torch Text fields make it easy to make Dataloaders of the data for the models to train on.
-First we implemented a Seq2seq which uses Encoder - Decoder. Both Encoder and Decoder use RNN. Encoder encodes the input sentence into a single vector, Decoder takes in that vector and outputs the sentence. After Viewing the Results we moved on to Implement the Transformer Model. Our Approach is to Implement the Transformer Architecture which is introduced in the paper
-“Attention Is All You Need”. As the title says the Transformer Model uses Attention which is a mechanism of which looks at parts of input and decides at each step on which part of the input is important. Transformer architecture also has Encoder and Decoder, but “Multi Head Attention” is Used at Encoder and “Multi-Headed Attention” , “Masked Multi-headed Attention” are used in Decoder.
-For encoder as the paper suggests first the tokens are passed to an Input embedding layer. Next a Positional Embedding layer is used to help our model for the sequence by injecting some information about the relative or absolute position of the tokens. Next we have used Multihead attention means many attention vectors will be created for each word and the Wz weight will choose which attention vector to take. (Multiple attention vector for one word) And the rest of the things in the model are normal like Feed Forward Neural Network and Normalization. We are using the BLEU metric in our model as this is the basic metric which provides quick and
+
+
+First we implemented a Seq2seq which uses Encoder - Decoder. Both Encoder and Decoder use RNN. Encoder encodes the input sentence into a single vector, Decoder takes in that vector and outputs the sentence. After Viewing the Results we moved on to Implement the Transformer Model. 
+
+
+Our Approach is to Implement the Transformer Architecture which is introduced in the paper
+“Attention Is All You Need”. As the title says the Transformer Model uses Attention which is a mechanism of which looks at parts of input and decides at each step on which part of the input is important. 
+
+
+Transformer architecture also has Encoder and Decoder, but “Multi Head Attention” is Used at Encoder and “Multi-Headed Attention” , “Masked Multi-headed Attention” are used in Decoder.
+
+
+For encoder as the paper suggests first the tokens are passed to an Input embedding layer. Next a Positional Embedding layer is used to help our model for the sequence by injecting some information about the relative or absolute position of the tokens. Next we have used Multihead attention means many attention vectors will be created for each word and the Wz weight will choose which attention vector to take. (Multiple attention vector for one word) And the rest of the things in the model are normal like Feed Forward Neural Network and Normalization.
+
+
+We are using the BLEU metric in our model as this is the basic metric which provides quick and
 quality assessment of our translation. It measures direct word-to-word similarity that provides first hand analysis of the quality of our translation. BLEU has frequently been reported as correlating well with human judgement. Another metric we are using our project is Perplexity. 
+
+
 In natural language processing, perplexity is a way of evaluating language models. A language model is a probability distribution over entire sentences or texts.
 
 ## Results
