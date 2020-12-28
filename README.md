@@ -51,4 +51,11 @@ https://www.manythings.org/anki/
 This is a normal daily life conversation of Japanese and we trained our model with this dataset.
 To our surprise we got a BLEU score of 61.0 and the next step was to merge our dataset and
 predict the BLEU score. This gave us a BLEU score of 41.49 and the Perplexity score was 1.2
-which is the state-of-art BLEU score.
+
+![LOSS](images/loss.png)
+
+
+![PERPLEXITY](images/Perplexity.png)
+
+
+
