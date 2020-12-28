@@ -38,15 +38,16 @@ In natural language processing, perplexity is a way of evaluating language model
 
 As a first step we used a Japanese English corpus from the following link for our model.
 https://www.kaggle.com/team-ai/japaneseenglish-bilingual-corpus
-This dataset mainly deals about traditional Japanese culture, religion, and history. As we went
-through the dataset it didn't have any daily life conversation or normal words that Japanese
-people use frequently. It was all about government offices, festivals etc. When we built our
-baseline model (we used the seq2seq model as our baseline) and ran this dataset we achieved
+
+
+This dataset mainly deals about traditional Japanese culture, religion, and history. As we went through the dataset it didn't have any daily life conversation or normal words that Japanese
+people use frequently. It was all about government offices, festivals etc. When we built our baseline model (we used the seq2seq model as our baseline) and ran this dataset we achieved
 a very low BLEU score of 4.86 and the Perplexity score was 64.835. When we built a
-transformer model and trained with this dataset, it gave us a BLEU score of 14.This made us
-look into more datasets and we felt if we have huge data for training the model will predict
+transformer model and trained with this dataset, it gave us a BLEU score of 14.This made us look into more datasets and we felt if we have huge data for training the model will predict
 well. So we found another dataset from the following link
 https://www.manythings.org/anki/
+
+
 This is a normal daily life conversation of Japanese and we trained our model with this dataset.
 To our surprise we got a BLEU score of 61.0 and the next step was to merge our dataset and
 predict the BLEU score. This gave us a BLEU score of 41.49 and the Perplexity score was 1.2
